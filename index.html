@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратный отсчет до Нового Года</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Обратный отсчет до</h1>
+            <h2>Нового Года!</h2>
+            <p class="subtitle">Начнем новый год с новыми мечтами и целями!</p>
+        </header>
+
+        <div class="timer-container">
+            <div class="timer">
+                <div class="time-block">
+                    <div class="number" id="days">00</div>
+                    <div class="label">Дней</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-block">
+                    <div class="number" id="hours">00</div>
+                    <div class="label">Часов</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-block">
+                    <div class="number" id="minutes">00</div>
+                    <div class="label">Минут</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-block">
+                    <div class="number" id="seconds">00</div>
+                    <div class="label">Секунд</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-year-date">
+            <p><i class="fas fa-calendar-alt"></i> Новый год наступит 1 января <span id="next-year"></span> года</p>
+        </div>
+
+        <div class="progress-container">
+            <p>Прогресс года:</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p class="progress-text" id="progress-text">0%</p>
+        </div>
+
+        <div class="celebrate">
+            <button id="celebrate-btn">
+                <i class="fas fa-gift"></i> Запустить праздничный эффект
+            </button>
+        </div>
+
+        <div class="snowflakes" id="snowflakes"></div>
+
+        <footer>
+            <p>С наступающим Новым Годом! 🎄✨</p>
+            <p class="copyright">© <span id="current-year"></span> Новогодний таймер</p>
+        </footer>
+    </div>
+
+    <audio id="firework-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-happy-new-year-horn-576.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
